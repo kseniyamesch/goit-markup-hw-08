@@ -1,0 +1,119 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    background-color: var(--secondary-title-color);
+
+    @media screen and (min-width:768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center
+}
+
+.header__nav {
+        display: none;
+    @media screen and(min-width:768px) {
+        display: block;
+    }
+} 
+
+.header__list {
+    display: flex;
+
+    & .header__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.header__item { 
+
+    cursor: pointer;
+
+    & .current::after {
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: #2196F3;
+    border-radius: 2px;
+    }
+}
+
+.header__link {
+    position:relative;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-title-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover, &:focus {
+    color: var(--accent-color); 
+}
+}
+
+// .header-contacts {
+// margin-left: auto;
+// }
+
+.contacts {
+    display: none;
+    margin-left: auto;
+    @media screen and(min-width:768px) {
+        display: block;
+    }
+    @media screen and (min-width:1200px) {
+                display: flex;
+            }
+}
+
+.contacts .header__item:not(:last-child) {
+    margin-right: 0;
+
+    @media screen and (min-width:1200px) {
+        margin-right: 30px;
+    }
+}
+
+.contacts__link {
+    color: var(--primary-text-color);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contacts__icon {
+    fill: currentColor; 
+    margin-right: 10px;
+}
+
+
