@@ -296,8 +296,6 @@ a {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -305,6 +303,20 @@ a {
   transform: translate(-50%, -50%) rotate(0deg);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+
+@media screen and (min-width: 460px) {
+  .modal {
+    width: 450px;
+    max-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modalbackdrop.is-hidden {
@@ -440,7 +452,6 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
-  margin-top: 30px;
 }
 
 .accept-link {
@@ -456,6 +467,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .check-box {
@@ -1193,16 +1205,43 @@ a {
   margin-left: 10px;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-bottom: -30px;
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-btn-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-btn-list {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn-item:not(:last-child) {
@@ -1210,6 +1249,7 @@ a {
 }
 
 .portfolio-btn {
+  padding: 6px 22px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -1219,8 +1259,16 @@ a {
   color: var(--primary-title-color);
   background-color: #F5F4FA;
   cursor: pointer;
-  padding: 6px 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-btn {
+    margin-bottom: 15px;
+  }
+  .portfolio-btn:nth-child(-n) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus {
@@ -1229,21 +1277,36 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.title-for-projects {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+}
+
 .project-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1251,34 +1314,29 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.projects-item:nth-child(3n) {
-  margin-right: 0px;
-}
-
 .projects-item:hover .overlay, .projects-item:focus .overlay {
   transform: translateY(0);
 }
 
-.projects-item a {
-  color: inherit;
+@media screen and (min-width: 768px) {
+  .projects-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
-.projects-img {
-  display: block;
-}
-
-.title-for-projects {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2.0;
-  letter-spacing: 0.06em;
-  color: var(--header-color);
-  margin-bottom: 4px;
+@media screen and (min-width: 1200px) {
+  .projects-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio-decription {
   padding: 20px 24px;
   border: 1px solid #ECECEC;
+}
+
+.projects-img {
+  display: block;
 }
 
 .thumb {

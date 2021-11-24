@@ -18,19 +18,20 @@ referrerpolicy="no-referrer">
 <body>
     <header class="header">
         <div class="container header-container">
-            
+            <a class="logo logo__header" href="">Web<span class="logo_dark">Studio</span> </a>
         <nav class="main-nav">
             
-            <a class="logo logo__header" href="">Web<span class="logo_dark">Studio</span> </a>
+            <div class="header__nav">
         
             <ul class="header__list">
-                <li class="header__item"> <a class="header__link " href="./index.html">Студия</a></li>
+                <li class="header__item"> <a class="header__link" href="./index.html">Студия</a></li>
                 <li class="header__item"> <a class="header__link current" href="./portfolio.html">Портфолио</a></li>
                 <li class="header__item"> <a class="header__link" href="">Контакты</a></li>
             </ul>
-        
+        </div>
         
         </nav>
+        <div class="header-contacts">
         <ul class="contacts">
             <li class="header__item"><a class="contacts__link" href="mailto:info@devstudio.com">
                 <svg class="contacts__icon" width="16" height="12">
@@ -44,62 +45,64 @@ referrerpolicy="no-referrer">
                 +38 096 111 11 11</a></li>
 
         </ul>
-                <!-- Mobile-menu -->
+    </div>
 
-                <button type="button" class="burger-btn header__btn" data-menu-open>
-                    <svg class="burger-btn__icon" width='40' height='40'>
-                        <use href="./images/sprite.svg#icon-menu"></use>
-                    </svg>
-                </button>
-                <div class="mobile-menu" data-menu>
-                    <button type="button" class="close-btn header__btn" data-menu-close>
-                        <svg class="close-btn__icon" width='40' height='40'>
-                            <use href="./images/sprite.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                    <div class="mobile-menu__wrapper">
-                    <div class="menu-nav">
-                        <ul class="menu-nav__list">
-                            <li class="menu-nav__item">
-                                <a href="" class="menu-nav__link">Студия</a>
-                            </li>
-                            <li class="menu-nav__item">
-                                <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
-                            </li>
-                            <li class="menu-nav__item">
-                                <a href="" class="menu-nav__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="menu-contacts">
-                        <ul class="menu-contacts__list">
-                            <li class="menu-contacts__item">
-                                <a href="tel:+380961111111" class="menu-contacts__tel">+38 096 111 11 11</a>
-                            </li>
-                            <li class="menu-contacts__item">
-                                <a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-social__list">
-                            <li class="menu-social__item">
-                                <a href="" class="menu-social__link">Instagram</a>
-                            </li>
-                            <li class="menu-social__item">
-                                <a href="" class="menu-social__link">Twitter</a>
-                            </li>
-                            <li class="menu-social__item">
-                                <a href="" class="menu-social__link">Facebook</a>
-                            </li>
-                            <li class="menu-social__item">
-                                <a href="" class="menu-social__link">LinkedIn</a>
-                            </li>
-                        </ul>
-        
-                    </div>
-                </div>
-                </div>
-        
-                <!-- End Mobile Menu -->
+        <!-- Mobile-menu -->
+
+        <button type="button" class="burger-btn header__btn" data-menu-open>
+            <svg class="burger-btn__icon" width='40' height='40'>
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="close-btn header__btn" data-menu-close>
+                <svg class="close-btn__icon" width='40' height='40'>
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__wrapper">
+            <div class="menu-nav">
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item">
+                        <a href="" class="menu-nav__link">Студия</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a href="" class="menu-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-contacts">
+                <ul class="menu-contacts__list">
+                    <li class="menu-contacts__item">
+                        <a href="tel:+380961111111" class="menu-contacts__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-social__list">
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link">Instagram</a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link">Twitter</a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link">Facebook</a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- End Mobile Menu -->
     </div>
     </header>
     <section class="portfolio">
@@ -126,7 +129,14 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                <div class="thumb">
-                <img class="projects-img" src="./images/project-1.jpg" alt="Проект веб-сайта" width="370">
+                <picture>
+
+                    <source media="(min-width:1200px)" srcset="./images/projects/techno-pc.jpg 1x, ./images/projects/techno-pc@2x.jpg 2x">
+                    <source media="(min-width:768px)" srcset="./images/projects/techno-tab.jpg 1x, ./images/projects/techno-tab@2x.jpg 2x">
+                    <source media="(max-width:767px)" srcset="./images/projects/techno-mob.jpg 1x, ./images/projects/techno-mob@2x.jpg 2x">
+
+                <img class="projects-img" src="#" alt="Проект веб-сайта">
+                </picture>
                 <div class="overlay">
                     <p class="overlay-text">
                         Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -143,7 +153,14 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
 <a href="">
                     <div class="thumb">
-                        <img class="projects-img" src="./images/project-2.jpg" alt="Постер с двумя баскетболистами" width="370">
+                        <picture>
+
+                            <source media="(min-width:1200px)" srcset="./images/projects/poster-pc.jpg 1x, ./images/projects/poster-pc@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="./images/projects/poster-tab.jpg 1x, ./images/projects/poster-tab@2x.jpg 2x">
+                            <source media="(max-width:767px)" srcset="./images/projects/poster-mob.jpg 1x, ./images/projects/poster-mob@2x.jpg 2x">
+        
+                        <img class="projects-img" src="#" alt="Постер с двумя баскетболистами">
+                        </picture>
                         <div class="overlay">
                             <p class="overlay-text">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolore repudiandae, ducimus fugit delectus debitis vero ad asperiores quibusdam nostrum!
@@ -160,7 +177,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
 <a href="">
                <div class="thumb">
-                <img class="projects-img" src="./images/project-3.jpg" alt="Логотип с изображением рыбы и названием ресторана Seafood" width="370"> 
+                <picture>
+
+                    <source media="(min-width:1200px)" srcset="./images/projects/resto-pc.jpg 1x, ./images/projects/resto-pc@2x.jpg 2x">
+                    <source media="(min-width:768px)" srcset="./images/projects/resto-tab.jpg 1x, ./images/projects/resto-tab@2x.jpg 2x">
+                    <source media="(max-width:767px)" srcset="./images/projects/resto-mob.jpg 1x, ./images/projects/resto-mob@2x.jpg 2x">
+                <img class="projects-img" src="#" alt="Логотип с изображением рыбы и названием ресторана Seafood"> 
+                </picture>
                 <div class="overlay">
                     <p class="overlay-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem unde eum explicabo commodi ratione reiciendis, dignissimos saepe voluptas doloremque!
@@ -176,7 +199,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                 <div class="thumb">
-                    <img class="projects-img" src="./images/project-4.jpg" alt="Наушники" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/prime-pc.jpg 1x, ./images/projects/prime-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/prime-tab.jpg 1x, ./images/projects/prime-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/prime-mob.jpg 1x, ./images/projects/prime-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="Наушники">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, voluptates eligendi! Quidem perferendis, repellat temporibus inventore aperiam voluptatibus ipsa. Delectus?
@@ -192,7 +221,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                 <div class="thumb">
-                    <img class="projects-img" src="./images/project-5.jpg" alt="белая и коричневая коробки" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/boxes-pc.jpg 1x, ./images/projects/boxes-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/boxes-tab.jpg 1x, ./images/projects/boxes-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/boxes-mob.jpg 1x, ./images/projects/boxes-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="белая и коричневая коробки">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores natus mollitia rerum similique deleniti nesciunt, sed nam magnam enim asperiores?
@@ -208,7 +243,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                 <div class="thumb">
-                    <img class="projects-img" src="./images/project-6.jpg" alt="Экран монитора с изображением сайта" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/inspiration-pc.jpg 1x, ./images/projects/inspiration-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/inspiration-tab.jpg 1x, ./images/projects/inspiration-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/inspiration-mob.jpg 1x, ./images/projects/inspiration-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="Экран монитора с изображением сайта">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ut optio, deleniti consectetur magni eaque exercitationem eveniet ad tempore ducimus.
@@ -224,7 +265,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                 <div class="thumb">
-                    <img class="projects-img" src="./images/project-7.jpg" alt="Разворот журнала с картинками и небольшим текстом" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/limited-pc.jpg 1x, ./images/projects/limited-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/limited-tab.jpg 1x, ./images/projects/limited-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/limited-mob.jpg 1x, ./images/projects/limited-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="Разворот журнала с картинками и небольшим текстом">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, modi aspernatur. Suscipit at cum iusto consequatur quibusdam facilis quas repellat.
@@ -240,7 +287,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                  <div class="thumb">
-                    <img class="projects-img" src="./images/project-8.jpg" alt="Белая бирка с черными буквами" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/lab-pc.jpg 1x, ./images/projects/lab-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/lab-tab.jpg 1x, ./images/projects/lab-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/lab-mob.jpg 1x, ./images/projects/lab-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="Белая бирка с черными буквами">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus iure facere ratione! Odit vitae alias, sed pariatur nulla laboriosam.
@@ -256,7 +309,13 @@ referrerpolicy="no-referrer">
             <li class="projects-item">
                 <a href="">
                 <div class="thumb">
-                    <img class="projects-img" src="./images/project-9.jpg" alt="Ноутбук и руки на клавиатуре" width="370">
+                    <picture>
+
+                        <source media="(min-width:1200px)" srcset="./images/projects/growing-pc.jpg 1x, ./images/projects/growing-pc@2x.jpg 2x">
+                        <source media="(min-width:768px)" srcset="./images/projects/growing-tab.jpg 1x, ./images/projects/growing-tab@2x.jpg 2x">
+                        <source media="(max-width:767px)" srcset="./images/projects/growing-mob.jpg 1x, ./images/projects/growing-mob@2x.jpg 2x">
+                    <img class="projects-img" src="#" alt="Ноутбук и руки на клавиатуре">
+                    </picture>
                     <div class="overlay">
                         <p class="overlay-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum nulla cumque repellat architecto quaerat culpa laudantium impedit quo corrupti.

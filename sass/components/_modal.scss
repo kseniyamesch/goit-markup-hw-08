@@ -1,7 +1,16 @@
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    @media screen and(min-width:460px) {
+        width: 450px;
+        max-height: 609px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 528px;
+        max-height: 581px;
+
+    }
+    
+    
     background-color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 50%;
