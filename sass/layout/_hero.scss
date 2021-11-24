@@ -3,7 +3,7 @@
     padding-bottom: 188px;
 
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-mob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,29 +14,29 @@
     margin-left: auto;
 
     @media screen and (min-device-pixel-ratio:2x), (min-resolution:192dpi), (min-resolution:2dppx) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-mob@2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-mob@2x.jpg);
     }
 
     @media screen and(min-width:768px) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-tab.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-tab.jpg);
 
         max-width: 768px;
         height: 400px;
 
         @media screen and (min-device-pixel-ratio:2x), (min-resolution:192dpi), (min-resolution:2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-tab@2x.jpg);}
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-tab@2x.jpg);}
     }
 
     @media screen and(min-width:1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
 
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-pc.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-pc.jpg);
         max-width: 1600px;
         height: 600px;
 
         @media screen and (min-device-pixel-ratio:2x), (min-resolution:192dpi), (min-resolution:2dppx) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/header-pc@2x.jpg);}
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/header-pc@2x.jpg);}
     }
 }
 
