@@ -20,12 +20,6 @@
   margin: -1px;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
@@ -62,8 +56,7 @@ a {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -718,14 +711,14 @@ a {
 @media screen and (min-width: 768px) {
   .advantage__item {
     margin: 15px;
-    flex-basis: calc((100%-4*15)/2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage__item {
     margin: 15px;
-    flex-basis: calc((100%-8*15)/4);
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
