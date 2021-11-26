@@ -36,11 +36,15 @@ line-height: 1.17;
 }
 .client-item {
     margin: 15px;
+    height: 92px;
     @media screen and(max-width:767px) {
         flex-basis: calc((100% - 60px) / 2 );
     }
     @media screen and(min-width:768px) and (max-width:1199px) {
         flex-basis: calc((100% - 90px) / 3 );
+    }
+    @media screen and(min-width:1200px) {
+        flex-basis: calc((100% - 180px) / 6);
     }
 }
 

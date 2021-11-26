@@ -99,8 +99,13 @@ color: var(--secondary-title-color);
 }
 .checkbox-label {
     position: relative;
+    font-size: 12px;
+line-height: 1.17;
+
+@media screen and(min-width:1200px) {
     font-size: 14px;
-line-height: 1.71;
+    line-height: 1.71;
+}
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 margin-left: 20px;
@@ -116,6 +121,7 @@ top: 50%;
 transform: translateY(-50%);
 cursor: pointer;
 }
+
 .checkbox-input:checked ~ .check-box {
     background-image: url(../images/checked.svg);
 }
